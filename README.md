@@ -6,7 +6,7 @@ To setup the whole thing you **WILL NEED** an Last.FM API Key, Mastodon Access T
   
 After that put the required info in the files located in the `utils/auth` folder, then configure tootweetfm to your preference on the `utils\settings.ts` file to have it run the way you want.
   
-**You won't need to touch the `index.ts` file to have it run.**
+**You won't need to touch the `index.ts` and other files not mentioned here to have it running.**
   
 # Installing and Running
 Run `npm i` to install and `npm start` to compile and run the thing.

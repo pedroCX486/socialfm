@@ -15,7 +15,7 @@ Run `npm i` to install and `npm start` to compile and run the thing.
 Your main point of interest would be `index.ts` file, where the main code resides. There's some extra code (and dirty hacks) in the `utils` folder, make sure to check it out if you like having nightmares at night.
   
 # License
-[WTFPL](http://www.wtfpl.net/txt/copying
+[WTFPL](http://www.wtfpl.net/txt/copying)
   
 # Contributing
 Don't. If you want to change anything, fork it. Issues and PRs will be promply closed because I don't have enough shits to give.

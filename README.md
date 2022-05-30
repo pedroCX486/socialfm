@@ -18,4 +18,4 @@ Your main point of interest would be `index.ts` file, where the main code reside
 [WTFPL](http://www.wtfpl.net/txt/copying)
   
 # Contributing
-Don't. If you want to change anything, fork it. Issues and PRs will be promply closed because I don't have enough shits to give.
+Don't. If you want to change anything, fork it. Issues and PRs will be promptly closed because I don't have enough shits to give.

@@ -1,10 +1,10 @@
 {
-  "name": "tootweetfm",
+  "name": "mastweetfm",
   "version": "1.0.0",
-  "description": "A simple Last.fm most listened to tweet/toot tool.",
+  "description": "A simple Last.fm most listened to short post tool.",
   "repository": {
     "type": "git",
-    "url": "git://github.com/pedrocx486/tootweetfm.git"
+    "url": "git://github.com/pedrocx486/mastweetfm.git"
   },
   "main": "index.js",
   "scripts": {

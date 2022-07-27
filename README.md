@@ -1,4 +1,4 @@
-# #tootweetfm
+# #mastweetfm
 A tool to post your most listened tracks and/or artists from Last.FM on Twitter and/or Mastodon.
   
 # Setup

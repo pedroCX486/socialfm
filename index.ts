@@ -89,7 +89,7 @@ const getLastFMArtistChart = (): void => {
       format: 'json'
     }
   }).then(response => {
-    prepareTootweet(parseLastFmResponse(response.data), ChartType.Artists);
+    preparePost(parseLastFmResponse(response.data), ChartType.Artists);
     lastFmErrorCount = 0;
   }).catch(error => {
     console.error('\nError when fetching data from Last.FM:', error);
@@ -107,7 +107,7 @@ const getLastFMArtistChart = (): void => {
   });
 }
 
-const prepareTootweet = async (lastFmData: Object, chartType: ChartType): Promise<void> => {
+const preparePost = async (lastFmData: Object, chartType: ChartType): Promise<void> => {
   let generatedContent =
     `My top ${settings.topRankedCount} #lastfm ${chartType === ChartType.Artists ? 'artists' : 'songs'} `
     + `from the last ${parseDayString(settings.daysToGetChartFrom)}: `;
@@ -171,9 +171,9 @@ const postToTwitter = async (tweetContent: string): Promise<void> => {
   });
 }
 
-const postToMastodon = async (tootContent: string): Promise<void> => {
-  await mastodonClient.post('statuses', { status: tootContent }).then((response: any) => {
-    console.log('\nTooted: ', response.data.url);
+const postToMastodon = async (postContent: string): Promise<void> => {
+  await mastodonClient.post('statuses', { status: postContent }).then((response: any) => {
+    console.log('\nPosted: ', response.data.url);
     mastodonErrorCount = 0;
   }).catch((error: any) => {
     console.error('\nError when posting to Mastodon:', error);
@@ -183,7 +183,7 @@ const postToMastodon = async (tootContent: string): Promise<void> => {
     if (mastodonErrorCount < settings.retries) {
       console.log(`\nRetrying in ${settings.retryAfterHowManySeconds} seconds...`);
       setTimeout(() => {
-        postToMastodon(tootContent);
+        postToMastodon(postContent);
       }, settings.retryAfterHowManySeconds * 1000);
     }
   });

@@ -60,7 +60,7 @@ const getLastFMTrackChart = (): void => {
       format: 'json'
     }
   }).then(response => {
-    prepareTootweet(parseLastFmResponse(response.data), ChartType.Tracks);
+    preparePost(parseLastFmResponse(response.data), ChartType.Tracks);
     lastFmErrorCount = 0;
   }).catch(error => {
     console.error('\nError when fetching data from Last.FM:', error);

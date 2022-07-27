@@ -135,7 +135,7 @@ const prepareTootweet = async (lastFmData: Object, chartType: ChartType): Promis
     if (i < (settings.topRankedCount - 1)) {
       generatedContent += ') | ';
     } else {
-      generatedContent += ') #tootweetfm';
+      generatedContent += ') #mastweetfm';
     }
   }
 

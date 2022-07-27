@@ -197,5 +197,5 @@ const createNextSchedule = (): void => {
   }, settings.scheduleEveryHowManyDays);
 }
 
-console.log('\nTootweetFM - pedrocx486 - WTFPL');
+console.log('\n#mastweetfm by @pedrocx486 - WTFPL');
 init();

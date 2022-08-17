@@ -68,10 +68,10 @@ const getLastFMTrackChart = (): void => {
 
     // Retry or else exit this cycle and try next scheduled cycle if it keeps failing.
     if (lastFmErrorCount < settings.retries) {
-      console.log(`\nRetrying in ${settings.retryAfterHowManySeconds / 1000} seconds...`);
+      console.log(`\nRetrying in ${settings.retryAfterHowManySeconds} seconds...`);
       setTimeout(() => {
         getLastFMTrackChart();
-      }, settings.retryAfterHowManySeconds);
+      }, settings.retryAfterHowManySeconds * 1000);
     } else {
       return
     }

@@ -50,7 +50,7 @@ const init = (): void => {
 }
 
 const getLastFMTrackChart = (): void => {
-  axios.get('http://ws.audioscrobbler.com/2.0/', {
+  axios.get('https://ws.audioscrobbler.com/2.0/', {
     params: {
       method: 'user.getWeeklyTrackChart',
       user: lastFmKeys.lastFmUsername,
@@ -79,7 +79,7 @@ const getLastFMTrackChart = (): void => {
 }
 
 const getLastFMArtistChart = (): void => {
-  axios.get('http://ws.audioscrobbler.com/2.0/', {
+  axios.get('https://ws.audioscrobbler.com/2.0/', {
     params: {
       method: 'user.getWeeklyArtistChart',
       user: lastFmKeys.lastFmUsername,

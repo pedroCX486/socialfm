@@ -13,7 +13,7 @@ Run `npm i` to install and `npm start` to compile and run the thing.
 
 # How do I make it recurrent?
 
-Use chron or something similar to task scheduler to run this thing.
+Use cron or something similar to task scheduler to run this thing.
   
 # Hacking at it
 Your main point of interest would be `index.ts` file, where the main code resides. There's some extra code (and dirty hacks) in the `utils` folder, make sure to check it out if you like having nightmares at night.

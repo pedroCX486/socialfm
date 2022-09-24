@@ -19,7 +19,7 @@ Use chron or something similar to task scheduler to run this thing.
 Your main point of interest would be `index.ts` file, where the main code resides. There's some extra code (and dirty hacks) in the `utils` folder, make sure to check it out if you like having nightmares at night.
   
 # License
-[WTFPL](http://www.wtfpl.net/txt/copying)
+[ISC](https://opensource.org/licenses/ISC)
   
 # Contributing
 Don't. If you want to change anything, fork it. Issues and PRs will be promptly closed because I don't have enough shits to give.

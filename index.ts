@@ -211,7 +211,7 @@ const postToPleroma = async (postContent: string): Promise<void> => {
 }
 
 ((): void => {
-  console.log('\n#SocialFM by @pedrocx486 - WTFPL');
+  console.log('\n#SocialFM by @pedrocx486');
   console.log('\nStarting...');
 
   switch (settings.chartContentType) {

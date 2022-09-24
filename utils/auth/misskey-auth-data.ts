@@ -1,4 +1,4 @@
-export const mastodonAuthData = {
+export const misskeyAuthData = {
   access_token: '',
   base_url: 'https://'
 }

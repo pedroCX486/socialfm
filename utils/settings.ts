@@ -5,8 +5,9 @@ export const settings = {
   retryAfterHowManySeconds: 5,
   topRankedCount: 3,
   daysToGetChartFrom: 30,
-  artistsInsteadOfSongs: ChartType.Both,
-  postOnTwitter: true,
-  postOnMastodon: true,
-  scheduleEveryHowManyDays: 30
+  chartContentType: ChartType.Both, // Artists, Tracks or Both
+  postOnTwitter: false,
+  postOnMastodon: false,
+  postOnMisskey: false,
+  postOnPleroma: false
 }

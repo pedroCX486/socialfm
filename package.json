@@ -22,7 +22,7 @@
     "misskey"
   ],
   "author": "pedrocx486",
-  "license": "WTFPL",
+  "license": "ISC",
   "dependencies": {
     "axios": "^0.27.2",
     "luxon": "^3.0.3",

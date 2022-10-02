@@ -115,16 +115,24 @@ const preparePost = async (lastFmData: Object, chartType: ChartType): Promise<vo
       generatedContent += ') #socialfm';
     }
   }
-
+  
   if (settings.postOnTwitter) {
     await postToTwitter(generatedContent);
-  } else if (settings.postOnMastodon) {
+  }
+
+  if (settings.postOnMastodon) {
     await postToMastodon(generatedContent);
-  } else if (settings.postOnMisskey) {
+  }
+
+  if (settings.postOnMisskey) {
     await postToMisskey(generatedContent);
-  } else if (settings.postOnPleroma) {
+  }
+
+  if (settings.postOnPleroma) {
     await postToPleroma(generatedContent);
-  } else {
+  }
+
+  if (!settings.postOnTwitter && !settings.postOnMastodon && !settings.postOnMastodon && !settings.postOnPleroma) {
     console.error('No social network is enabled to post on!');
     process.exit();
   }
